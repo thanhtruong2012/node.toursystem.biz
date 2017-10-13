@@ -1,0 +1,688 @@
+[2017-09-05 19:19:15.080] [ERROR] cheese - Caught exception: Error: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
+[2017-09-05 19:42:31.282] [ERROR] cheese - Code: ER_BAD_NULL_ERROR - Msg: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
+[2017-09-05 19:45:00.173] [ERROR] cheese - Caught exception: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
+Stack: Error: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at MessModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/MessModel.js:40:14)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:145:14)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-06 10:09:31.022] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+
+[2017-09-06 10:18:53.911] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+
+[2017-09-06 10:19:47.125] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+
+[2017-09-06 10:21:24.495] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+
+[2017-09-06 10:26:08.334] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+
+[2017-09-06 10:35:11.776] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:256:15)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+
+[2017-09-06 10:39:36.215] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:489:11)
+    at ServerResponse.setHeader (_http_outgoing.js:496:3)
+    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:76:11)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+
+[2017-09-06 11:15:42.184] [ERROR] cheese - Caught exception: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
+Stack: Error: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:190:23)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+
+[2017-09-06 11:32:02.580] [ERROR] cheese - Caught exception: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
+Stack: Error: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:193:23)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+
+[2017-09-06 11:37:15.171] [ERROR] cheese - Caught exception: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
+Stack: Error: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:193:23)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+
+[2017-09-06 12:05:54.514] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:42:19)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-06 12:06:45.985] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:42:19)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-06 13:29:43.836] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:18:14)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserMessController.js:15:18
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
+[2017-09-06 13:31:20.658] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:18:14)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserMessController.js:13:18
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
+[2017-09-06 13:32:25.062] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120 AND room_id = ?' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120 AND room_id = ?' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:18:14)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserMessController.js:13:18
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
+[2017-09-06 14:47:29.837] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:42:19)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-06 19:30:13.423] [ERROR] cheese - Caught exception: iData is not defined
+Stack: ReferenceError: iData is not defined
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:160:37)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-06 19:31:00.289] [ERROR] cheese - Caught exception: Cannot read property 'to' of undefined
+Stack: TypeError: Cannot read property 'to' of undefined
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:191:19)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+
+[2017-09-07 11:31:33.415] [ERROR] cheese - Caught exception: Cannot read property 'apply' of undefined
+Stack: TypeError: Cannot read property 'apply' of undefined
+    at UserMessModel.doAllRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:16:11)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:38:20)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+
+[2017-09-07 11:32:59.512] [ERROR] cheese - Caught exception: CreateListFromArrayLike called on non-object
+Stack: TypeError: CreateListFromArrayLike called on non-object
+    at UserMessModel.doAllRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:16:12)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:38:20)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+
+[2017-09-07 15:02:04.627] [ERROR] cheese - Caught exception: ER_NON_UNIQ_ERROR: Column 'user_token' in field list is ambiguous
+Stack: Error: ER_NON_UNIQ_ERROR: Column 'user_token' in field list is ambiguous
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:36:21)
+    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+
+[2017-09-07 16:27:45.551] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:159:18)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-07 16:28:21.217] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:159:18)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-25 11:31:12.475] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-25 11:36:18.490] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-25 11:37:41.007] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 398' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 398' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-25 11:39:46.399] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND mess_id = 398' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND mess_id = 398' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-25 18:27:54.606] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:26:19)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-25 18:28:44.272] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:26:19)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+[2017-09-29 10:30:17.751] [ERROR] cheese - Caught exception: ER_BAD_NULL_ERROR: Column 'room_code' cannot be null
+Stack: Error: ER_BAD_NULL_ERROR: Column 'room_code' cannot be null
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at RoomModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:70:15)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/RoomController.js:20:14
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
+[2017-09-29 12:16:32.359] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry 'cce75795e51e3c2a639f108c24b0956c' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry 'cce75795e51e3c2a639f108c24b0956c' for key 'PRIMARY'
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/UserModel.js:41:14)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserController.js:19:14
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
+[2017-09-29 12:38:17.424] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'room_id' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'room_id' in 'field list'
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at UserModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/UserModel.js:41:14)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserController.js:23:14
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
+[2017-09-29 19:19:25.481] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_mess' SELECT 'b9a175e4788be9cada1448bb2248d1d4' AS user_token,mess_id,room' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_mess' SELECT 'b9a175e4788be9cada1448bb2248d1d4' AS user_token,mess_id,room' at line 1
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at RoomModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:71:15)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/RoomController.js:20:14
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
+[2017-10-02 10:11:56.265] [ERROR] cheese - Caught exception: ER_CANT_AGGREGATE_2COLLATIONS: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+Stack: Error: ER_CANT_AGGREGATE_2COLLATIONS: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:266:12)
+    at readableAddChunk (_stream_readable.js:253:11)
+    --------------------
+    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
+    at RoomModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:71:15)
+    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/RoomController.js:20:14
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+
