@@ -31,7 +31,6 @@ class UserModel extends Model{
 	}
 	doInsert(data,callback){
 		var sql = "";
-		
 		if(typeof(data)!="undefined" && data){
 			sql += " INSERT INTO ?? SET ? ON DUPLICATE KEY UPDATE ?;";
 		}
@@ -39,10 +38,11 @@ class UserModel extends Model{
 		
 		if(sql!=""){
 			this.pool.query(sql,arr,function (error, results, fields) {
-				if (error)
+				if (error){
 					var result = {result:{code:1,msg:"Error"}};
-				else
+				}else{
 					var result = {result:{code:0,msg:"Success"}};
+				}
 				callback(result);
 			});
 		}else{

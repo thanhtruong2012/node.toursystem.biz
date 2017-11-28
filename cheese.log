@@ -1,688 +1,843 @@
-[2017-09-05 19:19:15.080] [ERROR] cheese - Caught exception: Error: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
-[2017-09-05 19:42:31.282] [ERROR] cheese - Code: ER_BAD_NULL_ERROR - Msg: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
-[2017-09-05 19:45:00.173] [ERROR] cheese - Caught exception: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
-Stack: Error: ER_BAD_NULL_ERROR: Column 'user_comp' cannot be null
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
+[2017-11-26 15:44:37.136] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
     --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at MessModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/MessModel.js:40:14)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:145:14)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at PoolNamespace.query (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\PoolNamespace.js:88:23)
+    at TestModel.doExecuteQuery (f:\xampp\htdocs\chatreal\libs\Database.js:20:19)
+    at TestModel.doInsertOne (f:\xampp\htdocs\chatreal\libs\Model1.js:199:18)
+    at TestModel.doInsert (f:\xampp\htdocs\chatreal\libs\Model1.js:75:22)
+    at async.waterfall.data.booking_id (f:\xampp\htdocs\chatreal\app\models\TestModel.js:17:35)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (f:\xampp\htdocs\chatreal\app\models\TestModel.js:14:27)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
 
-[2017-09-06 10:09:31.022] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+[2017-11-26 16:01:13.388] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at PoolNamespace.query (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\PoolNamespace.js:88:23)
+    at TestModel.doExecuteQuery (f:\xampp\htdocs\chatreal\libs\Database.js:20:19)
+    at TestModel.doInsertOne (f:\xampp\htdocs\chatreal\libs\Model1.js:199:18)
+    at TestModel.doInsert (f:\xampp\htdocs\chatreal\libs\Model1.js:75:22)
+    at async.waterfall.data.booking_id (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:23:31)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:23)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+
+[2017-11-26 16:05:33.099] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '3' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '3' for key 'PRIMARY'
+    at Query.Sequence._packetToError (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at PoolNamespace.query (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\PoolNamespace.js:88:23)
+    at TestModel.doExecuteQuery (f:\xampp\htdocs\chatreal\libs\Database.js:20:19)
+    at TestModel.doInsertOne (f:\xampp\htdocs\chatreal\libs\Model1.js:200:18)
+    at TestModel.doInsert (f:\xampp\htdocs\chatreal\libs\Model1.js:75:22)
+    at async.waterfall.data.booking_id (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:23:31)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:23)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+
+[2017-11-26 16:06:05.496] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '22' for key 'PRIMARY'
+    at Query.Sequence._packetToError (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at PoolNamespace.query (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\PoolNamespace.js:88:23)
+    at TestModel.doExecuteQuery (f:\xampp\htdocs\chatreal\libs\Database.js:20:19)
+    at TestModel.doInsertOne (f:\xampp\htdocs\chatreal\libs\Model1.js:200:18)
+    at TestModel.doInsert (f:\xampp\htdocs\chatreal\libs\Model1.js:75:22)
+    at async.waterfall.data.booking_id (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:23:31)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:23)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+
+[2017-11-26 16:16:46.103] [ERROR] cheese - Caught exception: _callback is not defined
+Stack: ReferenceError: _callback is not defined
+    at Query._callback (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:46:29)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+
+[2017-11-26 16:20:55.750] [ERROR] cheese - Caught exception: model is not defined
+Stack: ReferenceError: model is not defined
+    at a (f:\xampp\htdocs\chatreal\app\classes\BookingClass.js:12:13)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:15:23)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+
+[2017-11-26 16:21:57.447] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry 'N000000110' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry 'N000000110' for key 'PRIMARY'
+    at Query.Sequence._packetToError (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingModel.doExecuteQuery (f:\xampp\htdocs\chatreal\libs\Database.js:20:14)
+    at BookingModel.doInsertOne (f:\xampp\htdocs\chatreal\libs\Model1.js:200:18)
+    at BookingModel.doInsert (f:\xampp\htdocs\chatreal\libs\Model1.js:75:22)
+    at b (f:\xampp\htdocs\chatreal\app\classes\BookingClass.js:25:27)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at f:\xampp\htdocs\chatreal\app\classes\BookingClass.js:14:17
+
+[2017-11-26 16:27:27.972] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '10' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '10' for key 'PRIMARY'
+    at Query.Sequence._packetToError (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at TestModel.doExecuteQuery (f:\xampp\htdocs\chatreal\libs\Database.js:20:14)
+    at TestModel.doInsertOne (f:\xampp\htdocs\chatreal\libs\Model1.js:198:18)
+    at TestModel.doInsert (f:\xampp\htdocs\chatreal\libs\Model1.js:75:22)
+    at a (f:\xampp\htdocs\chatreal\app\classes\BookingClass.js:13:26)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:15:23)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+
+[2017-11-26 16:36:42.118] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '10' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '10' for key 'PRIMARY'
+    at Query.Sequence._packetToError (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at TestModel.doExecuteQuery (f:\xampp\htdocs\chatreal\libs\Database.js:20:14)
+    at TestModel.doInsertOne (f:\xampp\htdocs\chatreal\libs\Model1.js:204:18)
+    at TestModel.doInsert (f:\xampp\htdocs\chatreal\libs\Model1.js:81:22)
+    at a (f:\xampp\htdocs\chatreal\app\classes\BookingClass.js:13:26)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (f:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:13:23)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+
+[2017-11-26 16:38:04.571] [ERROR] cheese - Caught exception: rs is not defined
+Stack: ReferenceError: rs is not defined
+    at b (f:\xampp\htdocs\chatreal\app\classes\BookingClass.js:28:27)
+    at nextTask (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at f:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at f:\xampp\htdocs\chatreal\app\classes\BookingClass.js:14:17
+    at Query._callback (f:\xampp\htdocs\chatreal\libs\Database.js:77:13)
+    at Query.Sequence.end (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+    at Protocol._parsePacket (f:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+
+[2017-11-27 10:08:45.999] [ERROR] cheese - Caught exception: c is not defined
+Stack: ReferenceError: c is not defined
+    at BookingClass.save (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:31:21)
+    at eval (eval at <anonymous> (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:12:42), <anonymous>:1:12)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:12:17)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+
+[2017-11-27 10:16:10.572] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '29' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '29' for key 'PRIMARY'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at TestModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:20:14)
+    at TestModel.doInsertOne (c:\xampp\htdocs\chatreal\libs\Model1.js:204:18)
+    at TestModel.doInsert (c:\xampp\htdocs\chatreal\libs\Model1.js:81:22)
+    at a (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:14:26)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:24:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+
+[2017-11-27 11:09:09.171] [ERROR] cheese - Caught exception: Cannot read property 'push' of null
+Stack: TypeError: Cannot read property 'push' of null
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:28:21)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+
+[2017-11-27 11:44:27.109] [ERROR] cheese - Caught exception: ar is not defined
+Stack: ReferenceError: ar is not defined
+    at eval (eval at func_main (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:44:39), <anonymous>:1:18)
+    at func_main (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:44:21)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:57:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+
+[2017-11-27 11:45:03.645] [ERROR] cheese - Caught exception: data is not defined
+Stack: ReferenceError: data is not defined
+    at eval (eval at func_main (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:44:39), <anonymous>:1:29)
+    at func_main (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:44:21)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:57:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+
+[2017-11-27 11:45:57.683] [ERROR] cheese - Caught exception: conn.query is not a function
+Stack: TypeError: conn.query is not a function
+    at TestModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at TestModel.doQuery (c:\xampp\htdocs\chatreal\libs\Model1.js:214:14)
+    at eval (eval at func_main (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:44:39), <anonymous>:1:5)
+    at func_main (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:44:21)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:57:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+
+[2017-11-27 11:53:51.613] [ERROR] cheese - Caught exception: callback is not defined
+Stack: ReferenceError: callback is not defined
+    at func2 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:25:13)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at _callback (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:15:17)
+    at Query._callback (c:\xampp\htdocs\chatreal\libs\Database.js:82:13)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+
+[2017-11-27 12:25:31.635] [ERROR] cheese - Caught exception: Cannot read property 'TestModel' of null
+Stack: TypeError: Cannot read property 'TestModel' of null
+    at func1 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:12:29)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:24:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+
+[2017-11-27 12:38:09.067] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''[object Object]', '[object Object]', '[object Object]', '[object Object]' ON DU' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''[object Object]', '[object Object]', '[object Object]', '[object Object]' ON DU' at line 1
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingFlightModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingFlightModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at func3 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:36:40)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:20:21
+    at Query._callback (c:\xampp\htdocs\chatreal\libs\Database.js:87:13)
+
+[2017-11-27 12:40:29.191] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''[object Object]', '[object Object]', '[object Object]', '[object Object]' ON DU' at line 1
+Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''[object Object]', '[object Object]', '[object Object]', '[object Object]' ON DU' at line 1
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingFlightModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingFlightModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at func3 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:36:40)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:20:21
+    at Query._callback (c:\xampp\htdocs\chatreal\libs\Database.js:88:13)
+
+[2017-11-27 12:41:19.414] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry '166' for key 'PRIMARY'
+Stack: Error: ER_DUP_ENTRY: Duplicate entry '166' for key 'PRIMARY'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingFlightModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingFlightModel.doInsertOne (c:\xampp\htdocs\chatreal\libs\Model1.js:187:18)
+    at BookingFlightModel.doSave (c:\xampp\htdocs\chatreal\libs\Model1.js:67:22)
+    at func3 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:36:40)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:20:21
+
+[2017-11-27 12:42:40.198] [ERROR] cheese - Caught exception: callback is not a function
+Stack: TypeError: callback is not a function
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:37:25
+    at c:\xampp\htdocs\chatreal\libs\Model1.js:78:29
+    at Query._callback (c:\xampp\htdocs\chatreal\libs\Database.js:88:13)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+
+[2017-11-27 12:43:53.920] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'booking_guest_id' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'booking_guest_id' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingOptionModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingOptionModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at BookingOptionModel.doSave (c:\xampp\htdocs\chatreal\libs\Model1.js:67:22)
+    at func7 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:72:40)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:64:25
+
+[2017-11-27 12:44:47.014] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'booking_guest_id' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'booking_guest_id' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingOptionModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingOptionModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at BookingOptionModel.doSave (c:\xampp\htdocs\chatreal\libs\Model1.js:67:22)
+    at func7 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:72:40)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:64:25
+
+[2017-11-27 12:55:39.665] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at func1 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:22:30)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:24:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+
+[2017-11-27 12:57:20.830] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at func1 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:22:30)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:24:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+
+[2017-11-27 12:57:37.687] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingGuestModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingGuestModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at BookingGuestModel.doSave (c:\xampp\htdocs\chatreal\libs\Model1.js:67:22)
+    at func4 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:51:39)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:42:25
+
+[2017-11-27 12:58:46.301] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'aaa' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingHistModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingHistModel.doSaveOne (c:\xampp\htdocs\chatreal\libs\Model1.js:177:18)
+    at BookingHistModel.doSave (c:\xampp\htdocs\chatreal\libs\Model1.js:67:22)
+    at func5 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:61:38)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:52:25
+
+[2017-11-27 14:57:06.628] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'total_price' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'total_price' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingFlightModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingFlightModel.doUpdateOne (c:\xampp\htdocs\chatreal\libs\Model1.js:197:18)
+    at BookingFlightModel.doUpdate (c:\xampp\htdocs\chatreal\libs\Model1.js:119:22)
+    at func3 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:148:40)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:131:25
+
+[2017-11-27 14:58:26.269] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'total_price' in 'field list'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'total_price' in 'field list'
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at Protocol._enqueue (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:208:25)
+    at BookingHotelModel.doExecuteQuery (c:\xampp\htdocs\chatreal\libs\Database.js:19:14)
+    at BookingHotelModel.doUpdateOne (c:\xampp\htdocs\chatreal\libs\Model1.js:197:18)
+    at BookingHotelModel.doUpdate (c:\xampp\htdocs\chatreal\libs\Model1.js:119:22)
+    at func4 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:166:39)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:149:25
+
+[2017-11-27 15:07:14.709] [ERROR] cheese - Caught exception: Cannot read property 'query' of undefined
+Stack: TypeError: Cannot read property 'query' of undefined
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\chat.js:75:18)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at c:\xampp\htdocs\chatreal\node_modules\socket.io\lib\socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+[2017-11-27 15:07:20.132] [ERROR] cheese - Caught exception: Cannot read property 'query' of undefined
+Stack: TypeError: Cannot read property 'query' of undefined
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\chat.js:75:18)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at c:\xampp\htdocs\chatreal\node_modules\socket.io\lib\socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+[2017-11-27 15:09:40.474] [ERROR] cheese - Caught exception: ER_NO_SUCH_TABLE: Table 'toursys_db.user_room' doesn't exist
+Stack: Error: ER_NO_SUCH_TABLE: Table 'toursys_db.user_room' doesn't exist
+    at Query.Sequence._packetToError (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    --------------------
+    at PoolNamespace.query (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\PoolNamespace.js:88:23)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\chat.js:26:19)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at c:\xampp\htdocs\chatreal\node_modules\socket.io\lib\socket.js:514:12
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+[2017-11-27 15:11:06.853] [ERROR] cheese - Caught exception: Cannot read property 'code' of undefined
+Stack: TypeError: Cannot read property 'code' of undefined
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:54:44
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+
+[2017-11-27 15:37:48.527] [ERROR] cheese - Caught exception: Cannot read property '0' of undefined
+Stack: TypeError: Cannot read property '0' of undefined
+    at func2 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:126:73)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:116:21
+    at Query._callback (c:\xampp\htdocs\chatreal\libs\Database.js:88:13)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+
+[2017-11-27 15:38:31.511] [ERROR] cheese - Caught exception: Cannot read property '0' of undefined
+Stack: TypeError: Cannot read property '0' of undefined
+    at func5 (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:178:69)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5310:14)
+    at next (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5317:9)
+    at c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:958:16
+    at c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:167:25
+    at c:\xampp\htdocs\chatreal\libs\Model1.js:130:29
+    at Query._callback (c:\xampp\htdocs\chatreal\libs\Database.js:88:13)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+
+[2017-11-27 16:51:57.704] [ERROR] cheese - Caught exception: stream is not defined
+Stack: ReferenceError: stream is not defined
+    at Namespace.<anonymous> (c:\xampp\htdocs\chatreal\chat.js:11:29)
+    at emitOne (events.js:96:13)
+    at Namespace.emit (events.js:188:7)
+    at Namespace.emit (c:\xampp\htdocs\chatreal\node_modules\socket.io\lib\namespace.js:212:10)
+    at c:\xampp\htdocs\chatreal\node_modules\socket.io\lib\namespace.js:180:14
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+[2017-11-27 17:33:54.672] [ERROR] cheese - Caught exception: BookingModel is not defined
+Stack: ReferenceError: BookingModel is not defined
+    at BookingClass.confirm (c:\xampp\htdocs\chatreal\app\classes\BookingClass.js:101:21)
+    at eval (eval at <anonymous> (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:12:42), <anonymous>:1:12)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:12:17)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+
+[2017-11-28 15:27:27.759] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
 Stack: Error: Can't set headers after they are sent.
-    at validateHeader (_http_outgoing.js:489:11)
-    at ServerResponse.setHeader (_http_outgoing.js:496:3)
-    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
-    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.json (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:253:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:158:21)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:57:25
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
 
-[2017-09-06 10:18:53.911] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+[2017-11-28 15:30:48.510] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
 Stack: Error: Can't set headers after they are sent.
-    at validateHeader (_http_outgoing.js:489:11)
-    at ServerResponse.setHeader (_http_outgoing.js:496:3)
-    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
-    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:256:15)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:158:21)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:57:25
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
 
-[2017-09-06 10:19:47.125] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+[2017-11-28 16:18:02.615] [ERROR] cheese - Caught exception: Cannot read property 'code' of undefined
+Stack: TypeError: Cannot read property 'code' of undefined
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:59:48
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:96:13)
+
+[2017-11-28 16:23:18.120] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
 Stack: Error: Can't set headers after they are sent.
-    at validateHeader (_http_outgoing.js:489:11)
-    at ServerResponse.setHeader (_http_outgoing.js:496:3)
-    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
-    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:183:10)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:63:29
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
 
-[2017-09-06 10:21:24.495] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+[2017-11-28 16:23:31.196] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
 Stack: Error: Can't set headers after they are sent.
-    at validateHeader (_http_outgoing.js:489:11)
-    at ServerResponse.setHeader (_http_outgoing.js:496:3)
-    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
-    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:183:10)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:63:29
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
 
-[2017-09-06 10:26:08.334] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+[2017-11-28 16:24:43.688] [ERROR] cheese - Caught exception: Cannot read property 'Symbol(Symbol.toStringTag)' of undefined
+Stack: TypeError: Cannot read property 'Symbol(Symbol.toStringTag)' of undefined
+    at isAsync (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:228:32)
+    at wrapAsync (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:232:12)
+    at nextTask (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5308:20)
+    at Object.waterfall (c:\xampp\htdocs\chatreal\node_modules\async\dist\async.js:5320:5)
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:24:23)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+
+[2017-11-28 16:27:00.975] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
 Stack: Error: Can't set headers after they are sent.
-    at validateHeader (_http_outgoing.js:489:11)
-    at ServerResponse.setHeader (_http_outgoing.js:496:3)
-    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
-    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:170:12)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:63:29
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
 
-[2017-09-06 10:35:11.776] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+[2017-11-28 16:27:19.873] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
 Stack: Error: Can't set headers after they are sent.
-    at validateHeader (_http_outgoing.js:489:11)
-    at ServerResponse.setHeader (_http_outgoing.js:496:3)
-    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
-    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:256:15)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:75:11)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:256:15)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:158:21)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:63:29
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
 
-[2017-09-06 10:39:36.215] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+[2017-11-28 16:31:11.039] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
 Stack: Error: Can't set headers after they are sent.
-    at validateHeader (_http_outgoing.js:489:11)
-    at ServerResponse.setHeader (_http_outgoing.js:496:3)
-    at ServerResponse.header (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:730:10)
-    at ServerResponse.send (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/response.js:170:12)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:76:11)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:256:15)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:158:21)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:56:29
+    at c:\xampp\htdocs\chatreal\libs\Controller.js:31:17
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:25:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
 
-[2017-09-06 11:15:42.184] [ERROR] cheese - Caught exception: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
-Stack: Error: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:190:23)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
+[2017-11-28 16:32:49.067] [ERROR] cheese - Caught exception: Cannot read property 'send' of undefined
+Stack: TypeError: Cannot read property 'send' of undefined
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:55:28
+    at c:\xampp\htdocs\chatreal\libs\Controller.js:31:17
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActModelFact.js:25:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.OkPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:72:10)
+    at Protocol._parsePacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\Connection.js:103:28)
 
-[2017-09-06 11:32:02.580] [ERROR] cheese - Caught exception: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
-Stack: Error: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:193:23)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-
-[2017-09-06 11:37:15.171] [ERROR] cheese - Caught exception: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
-Stack: Error: ER_NO_SUCH_TABLE: Table 'apiconnect_chatserver.user_mess' doesn't exist
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:193:23)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-
-[2017-09-06 12:05:54.514] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:42:19)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-06 12:06:45.985] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:42:19)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-06 13:29:43.836] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:18:14)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserMessController.js:15:18
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
-
-[2017-09-06 13:31:20.658] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:18:14)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserMessController.js:13:18
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
-
-[2017-09-06 13:32:25.062] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120 AND room_id = ?' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `room_id` = 1921120 AND room_id = ?' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:18:14)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserMessController.js:13:18
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
-
-[2017-09-06 14:47:29.837] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:42:19)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-06 19:30:13.423] [ERROR] cheese - Caught exception: iData is not defined
-Stack: ReferenceError: iData is not defined
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:160:37)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-06 19:31:00.289] [ERROR] cheese - Caught exception: Cannot read property 'to' of undefined
-Stack: TypeError: Cannot read property 'to' of undefined
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:191:19)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.OkPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-
-[2017-09-07 11:31:33.415] [ERROR] cheese - Caught exception: Cannot read property 'apply' of undefined
-Stack: TypeError: Cannot read property 'apply' of undefined
-    at UserMessModel.doAllRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:16:11)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:38:20)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-
-[2017-09-07 11:32:59.512] [ERROR] cheese - Caught exception: CreateListFromArrayLike called on non-object
-Stack: TypeError: CreateListFromArrayLike called on non-object
-    at UserMessModel.doAllRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:16:12)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:38:20)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-
-[2017-09-07 15:02:04.627] [ERROR] cheese - Caught exception: ER_NON_UNIQ_ERROR: Column 'user_token' in field list is ambiguous
-Stack: Error: ER_NON_UNIQ_ERROR: Column 'user_token' in field list is ambiguous
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Query._callback (/var/www/vhost/www-chat.tabikobo.com/chat.js:36:21)
-    at Query.Sequence.end (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
-    at Query._handleFinalResultPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
-    at Query.EofPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-
-[2017-09-07 16:27:45.551] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:159:18)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-07 16:28:21.217] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND mess_id = 188' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:159:18)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-25 11:31:12.475] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-25 11:36:18.490] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 396' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-25 11:37:41.007] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 398' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = NULL AND mess_id = 398' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-25 11:39:46.399] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND mess_id = 398' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND mess_id = 398' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserMessModel.doRoomNotifyClear (/var/www/vhost/www-chat.tabikobo.com/app/models/UserMessModel.js:48:14)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:168:18)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-25 18:27:54.606] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:26:19)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-25 18:28:44.272] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND room_id = 'N000000002' AND user_status = 1' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/chat.js:26:19)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/socket.io/lib/socket.js:514:12
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-    at process._tickCallback (internal/process/next_tick.js:180:9)
-
-[2017-09-29 10:30:17.751] [ERROR] cheese - Caught exception: ER_BAD_NULL_ERROR: Column 'room_code' cannot be null
-Stack: Error: ER_BAD_NULL_ERROR: Column 'room_code' cannot be null
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at RoomModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:70:15)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/RoomController.js:20:14
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
-
-[2017-09-29 12:16:32.359] [ERROR] cheese - Caught exception: ER_DUP_ENTRY: Duplicate entry 'cce75795e51e3c2a639f108c24b0956c' for key 'PRIMARY'
-Stack: Error: ER_DUP_ENTRY: Duplicate entry 'cce75795e51e3c2a639f108c24b0956c' for key 'PRIMARY'
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/UserModel.js:41:14)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserController.js:19:14
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
-
-[2017-09-29 12:38:17.424] [ERROR] cheese - Caught exception: ER_BAD_FIELD_ERROR: Unknown column 'room_id' in 'field list'
-Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'room_id' in 'field list'
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at UserModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/UserModel.js:41:14)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/UserController.js:23:14
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
-
-[2017-09-29 19:19:25.481] [ERROR] cheese - Caught exception: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_mess' SELECT 'b9a175e4788be9cada1448bb2248d1d4' AS user_token,mess_id,room' at line 1
-Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user_mess' SELECT 'b9a175e4788be9cada1448bb2248d1d4' AS user_token,mess_id,room' at line 1
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at RoomModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:71:15)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/RoomController.js:20:14
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
-
-[2017-10-02 10:11:56.265] [ERROR] cheese - Caught exception: ER_CANT_AGGREGATE_2COLLATIONS: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
-Stack: Error: ER_CANT_AGGREGATE_2COLLATIONS: Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
-    at Query.Sequence._packetToError (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
-    at Query.ErrorPacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
-    at Protocol._parsePacket (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:279:23)
-    at Parser.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Parser.js:76:12)
-    at Protocol.write (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/protocol/Protocol.js:39:16)
-    at Socket.<anonymous> (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/Connection.js:103:28)
-    at emitOne (events.js:115:13)
-    at Socket.emit (events.js:210:7)
-    at addChunk (_stream_readable.js:266:12)
-    at readableAddChunk (_stream_readable.js:253:11)
-    --------------------
-    at PoolNamespace.query (/var/www/vhost/www-chat.tabikobo.com/node_modules/mysql/lib/PoolNamespace.js:88:23)
-    at RoomModel.doInsert (/var/www/vhost/www-chat.tabikobo.com/app/models/RoomModel.js:71:15)
-    at /var/www/vhost/www-chat.tabikobo.com/app/controllers/RoomController.js:20:14
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/layer.js:95:5)
-    at /var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/vhost/www-chat.tabikobo.com/node_modules/express/lib/router/index.js:275:10)
+[2017-11-28 17:05:03.121] [ERROR] cheese - Caught exception: Can't set headers after they are sent.
+Stack: Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:256:15)
+    at ServerResponse.send (c:\xampp\htdocs\chatreal\node_modules\express\lib\response.js:158:21)
+    at BookingController.doResponse (c:\xampp\htdocs\chatreal\libs\Controller.js:50:13)
+    at c:\xampp\htdocs\chatreal\app\controllers\BookingController.js:18:38
+    at Query._callback (c:\xampp\htdocs\chatreal\app\factories\ActClassFact.js:20:25)
+    at Query.Sequence.end (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (c:\xampp\htdocs\chatreal\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
 

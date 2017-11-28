@@ -172,7 +172,7 @@ module.exports = function(app, io){
 			UserMessModel.doRoomNotifyClear(data,function(result){
 				
 			});
-		})
+		});
 		
 		socket.on('typing',function(data){
 			socket.broadcast.to(data.room_id).emit('typing',data);
@@ -182,6 +182,8 @@ module.exports = function(app, io){
 		});
 		
 		socket.on('chat', function(data){
+                        //send to all people in namespace
+                        //nsp.to(data.room_id).emit('chat',data.mess_txt);
 			//send to all people in room
 			//nsp.to(data.room_id).emit('chat',data.mess_txt);
 			//send to another people in room
