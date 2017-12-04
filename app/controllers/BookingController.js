@@ -11,11 +11,11 @@ class BookingController extends Controller{
                     if(typeof(req.body.request) == "undefined" || !req.body.request){
                         ctrl.doResponse(res , 1);
                     }else{
-                        ActClassFact.executeAction(req.body.request,"Booking","confirm",function(result){
+                        ActClassFact.executeAction(req.body,"Booking","confirm",function(result){
                             if(typeof(result.result.code)!="undefined" && result.result.code == 0){
-                                nsp.emit("hi","World");
+                                nsp.emit('booking_confirm',result.data);
                                 //Success
-                                ctrl.doResponse(res , 0);
+                                ctrl.doResponse(res , result);
                             }else{
                                 //Error
                                 ctrl.doResponse(res , 1);

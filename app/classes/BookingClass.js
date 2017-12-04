@@ -91,7 +91,6 @@ class BookingClass extends Class{
             };
             func.push(func8);
         }else{
-            console.log(123);
             var func1 = function(callback){
                 callback(null,null);
             };
@@ -100,38 +99,41 @@ class BookingClass extends Class{
         
         return func;
     }
-    confirm(conn,data){
+    confirm(conn,body){
         var func = new Array();
         //callback
         var BookingModel = this.loadModel("Booking");
+        var BookingAgentModel = this.loadModel("BookingAgent");
         var BookingFlightModel = this.loadModel("BookingFlight");
         var BookingGuestModel = this.loadModel("BookingGuest");
         var BookingHistModel = this.loadModel("BookingHist");
         var BookingHotelModel = this.loadModel("BookingHotel");
         var BookingOptionModel = this.loadModel("BookingOption");
-        
-        if(typeof(data) != "undefined" && data){
+        var request = body.request;
+        var auth = body.auth;
+        if(typeof(request) != "undefined" && request){
             var func1 = function(callback){
                 var iData = {
-                    "booking_id":data["booking_id"],
-                    "sbj_booking_status":data["agent_status"],
-                    "sbj_user_name":data["confirm_staff_name"],
-                    "total_price":data["total_price"],
-                    "average_price":data["average_price"]
+                    "agent_cd":auth["agent_cd"],
+                    "booking_id":request["booking_id"],
+                    "agent_booking_id":request["agent_booking_id"],
+                    "agent_booking_cd":request["agent_booking_cd"],
+                    "agent_booking_status":request["agent_booking_status"],
+                    "agent_confirm_user":request["agent_confirm_user"]
                 };
-                BookingModel.doUpdateOne(conn,iData,function(res){
+                BookingAgentModel.doSaveOne(conn,iData,function(res){
                     callback(null,res);
                 });
             };
             func.push(func1);
             
-            if(typeof(data["booking_guest"]) != "undefined" && data["booking_guest"]){
+            if(typeof(request["booking_guest"]) != "undefined" && request["booking_guest"]){
                 var func2 = function(result,callback){
                     var iData = new Array();
-                    for(var key in data["booking_guest"]){
+                    for(var key in request["booking_guest"]){
                         iData.push({
-                            "booking_guest_id":data["booking_guest"][key]["booking_guest_id"],
-                            "agent_status":data["booking_guest"][key]["agent_status"]
+                            "booking_guest_id":request["booking_guest"][key]["booking_guest_id"],
+                            "agent_status":request["booking_guest"][key]["agent_status"]
                         });
                     }
                     BookingGuestModel.doUpdate(conn,iData,function(res){
@@ -141,15 +143,16 @@ class BookingClass extends Class{
                 func.push(func2);
             }
             
-            if(typeof(data["booking_flight"]) != "undefined" && data["booking_flight"]){
+            if(typeof(request["booking_flight"]) != "undefined" && request["booking_flight"]){
                 var func3 = function(result,callback){
                     var iData = new Array();
-                    for(var key in data["booking_flight"]){
+                    for(var key in request["booking_flight"]){
                         iData.push({
-                            "booking_flight_id":data["booking_flight"][key]["booking_flight_id"],
-                            "total_price":data["booking_flight"][key]["total_price"],
-                            "average_price":data["booking_flight"][key]["average_price"],
-                            "agent_status":data["booking_flight"][key]["agent_status"]
+                            "booking_flight_id":request["booking_flight"][key]["booking_flight_id"],
+                            "curr_cd":request["booking_flight"][key]["curr_cd"],
+                            "total_price":request["booking_flight"][key]["total_price"],
+                            "average_price":request["booking_flight"][key]["average_price"],
+                            "agent_status":request["booking_flight"][key]["agent_status"]
                         });
                     }
                     BookingFlightModel.doUpdate(conn,iData,function(res){
@@ -159,15 +162,16 @@ class BookingClass extends Class{
                 func.push(func3);
             }
             
-            if(typeof(data["booking_hotel"]) != "undefined" && data["booking_hotel"]){
+            if(typeof(request["booking_hotel"]) != "undefined" && request["booking_hotel"]){
                 var func4 = function(result,callback){
                     var iData = new Array();
-                    for(var key in data["booking_hotel"]){
+                    for(var key in request["booking_hotel"]){
                         iData.push({
-                            "booking_hotel_id":data["booking_hotel"][key]["booking_hotel_id"],
-                            "total_price":data["booking_hotel"][key]["total_price"],
-                            "average_price":data["booking_hotel"][key]["average_price"],
-                            "agent_status":data["booking_hotel"][key]["agent_status"]
+                            "booking_hotel_id":request["booking_hotel"][key]["booking_hotel_id"],
+                            "curr_cd":request["booking_hotel"][key]["curr_cd"],
+                            "total_price":request["booking_hotel"][key]["total_price"],
+                            "average_price":request["booking_hotel"][key]["average_price"],
+                            "agent_status":request["booking_hotel"][key]["agent_status"]
                         });
                     }
                     BookingHotelModel.doUpdate(conn,iData,function(res){
@@ -177,15 +181,16 @@ class BookingClass extends Class{
                 func.push(func4);
             }
             
-            if(typeof(data["booking_option"]) != "undefined" && data["booking_option"]){
+            if(typeof(request["booking_option"]) != "undefined" && request["booking_option"]){
                 var func5 = function(result,callback){
                     var iData = new Array();
-                    for(var key in data["booking_option"]){
+                    for(var key in request["booking_option"]){
                         iData.push({
-                            "booking_option_id":data["booking_option"][key]["booking_option_id"],
-                            "total_price":data["booking_option"][key]["total_price"],
-                            "average_price":data["booking_option"][key]["average_price"],
-                            "agent_status":data["booking_option"][key]["agent_status"]
+                            "booking_option_id":request["booking_option"][key]["booking_option_id"],
+                            "curr_cd":request["booking_option"][key]["curr_cd"],
+                            "total_price":request["booking_option"][key]["total_price"],
+                            "average_price":request["booking_option"][key]["average_price"],
+                            "agent_status":request["booking_option"][key]["agent_status"]
                         });
                     }
                     BookingOptionModel.doUpdate(conn,iData,function(res){
@@ -194,9 +199,39 @@ class BookingClass extends Class{
                 };
                 func.push(func5);
             }
+            
+            var func6 = function(result,callback){
+                var iData = {
+                    "booking_id":request["booking_id"]
+                };
+                BookingModel.doRefreshPrice(conn,iData,function(res){
+                    if(res.result.code == 0){
+                        request["total_price"] = res.data.total_price;
+                        request["average_price"] = res.data.average_price;
+                    }
+                    callback(null,res);
+                });
+            };
+            func.push(func6);
+            
+            
+            var func7 = function(result,callback){
+                var iData = {
+                    "booking_id" : request["booking_id"],
+                    "remarks" : "Agent Confirm",
+                    "user_id" : -1,
+                    "user_name" : auth["agent_cd"],
+                    "ischeck" : 0
+                };
+                BookingHistModel.doInsertOne(conn,iData,function(res){
+                    res.data = request;
+                    callback(null,res);
+                });
+            };
+            func.push(func7);
         }else{
              var func1 = function(callback){
-                 callback(null,{"result":{"code":1,"msg":"Authentication Error"}});
+                 callback(null,{"result":{"code":1,"msg":"Request Error"}});
              };
              func.push(func1);
         }

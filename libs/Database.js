@@ -21,12 +21,24 @@ class Database {
                 console.log(this.sql);
                 conn.rollback();
                 throw error;
-            } 
+            }
             
             var _data = null;
             var isValid = false;
             
             switch(type){
+                case "storeOne":
+                    if(typeof(results[0]) != "undefined" && results[0]){
+                        isValid = true;
+                        _data = results[0][0];
+                    }
+                    break;
+                case "store":
+                    if(typeof(results[0]) != "undefined" && results[0]){
+                        isValid = true;
+                        _data = results[0];
+                    }
+                    break;
                 case "selectOne":
                     if(typeof(results[0]) != "undefined" && results[0]){
                         isValid = true;
